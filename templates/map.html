@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Click LatLng</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href='{% static 'map/mapa.css' %}'>
+    <script src='{% static 'map/addPoint.js' %}'></script>
+</head>
+<body>
+<div id="map"></div>
+<div id="points"><p class="center">Twoje Punkty:</p> </div>
+<div id="selfLocalization">
+    <p class="center">Twoja Lokalizacja:</p>
+    <p class="center" id="selfLocalizationCoordinates"><b>ZEZWÓL NA ZLOKALIZOWANIE</b></p>
+</div>
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArwH0QPkjNEJ-rE_3WXFHUImPYDa76T4w&callback=initMap&libraries=&v=weekly"
+        async
+></script>
+</body>
+</html>

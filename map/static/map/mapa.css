@@ -1,0 +1,64 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteButton {
+    background-color: red;
+    border: #993300;
+}
+
+#points {
+    font-size: 70%;
+    position: fixed;
+    top: 15%;
+    left: 0.2%;
+    width: 300px;
+    border-radius: 5px;
+    border: 3px solid rgba(100,100,100,0.85);
+    z-index: 10;
+    background-color: rgba(120,120,120,0.5);
+    overflow-wrap: break-word;
+    line-height: 30%;
+}
+
+.points:hover{
+    color: red;
+}
+
+.points{
+    font-size: 300px;
+}
+
+#selfLocalization
+{
+    font-size: 70%;
+    position: fixed;
+    top: 10%;
+    left: 0.2%;
+    width: 300px;
+    border-radius: 5px;
+    border: 3px solid rgba(255, 0, 0, 0.9);
+    z-index: 10;
+    background-color: rgba(255, 0, 0, 0.4);
+    overflow-wrap: break-word;
+    line-height: 30%;
+}
+
+.custom-map-control-button {
+    appearance: button;
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 10px;
+    padding: 0 0.5em;
+    height: 40px;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+}
+.custom-map-control-button:hover {
+    background: #ebebeb;
+}
